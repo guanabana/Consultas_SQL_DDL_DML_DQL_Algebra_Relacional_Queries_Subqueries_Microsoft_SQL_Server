@@ -4,9 +4,8 @@ El objetivo de este ejercicio es continuar con la fase de Diseño e implementaci
 Este ejercicio tiene como punto de partida la misma realidad planteada para el ejercicio de modelado de datos. 
 https://github.com/guanabana/Modelado_Base_Datos_Relacional_MER_MR_3FN.git
 ![image](https://github.com/user-attachments/assets/a4434454-b2c9-4a71-90be-fafe3b168cd2)
-A continuación lo que se pide para este ejercicio:
 
-Con base al modelo relacional provisto en el archivo: "DDL + Casos prueba Obli2 Marzo 2022"se
+Con base al modelo relacional provisto en el archivo: "DDL_BD1_profesores.sql + DML_BD1_Profesores.sql" se
 solicita la implementación de las siguientes consultas en SQL y AR (algebra Relacional):
 
 1. Listar los nombres de los conductores con la mayor cantidad de posteos escritos en los programas que conducen.
@@ -19,13 +18,21 @@ solicita la implementación de las siguientes consultas en SQL y AR (algebra Rel
 
 Se pide:
 
+• Crear la BD a partir de DDL_BD1_profesores.sql 
+• Crear Datos de Pruebas Propios para ir realizando las queries (este es el archivo  DML_Inserts.sql)
 • Sentencias de Lenguaje de Manipulación de Datos en SQL para responder las consultas enumeradas previamente con las correspondientes sentencias SQL que permitan cargar el juego de datos con el que se realizaron las pruebas previas a la entrega.
-• Evidencia de ejecución de las consultas sobre la base de datos brindada por el cuerpo docente. (script será publicado en aulas en la pestaña Evaluaciones).
+• Evidencia de ejecución de las consultas sobre la base de datos brindada DDL_BD1_profesores.sql + DML_BD1_Profesores.sql.
 • Resolución en AR (Algebra Relacional) de los puntos 2, 4 y 6.
 
-NOTA: Las consultas deben ser compatibles con MSSQL 2014.
+NOTA: Las consultas deben ser compatibles con MSSQL 2014. El Detalle de esta documentado y se puede VER en Obligatorio2_ BD_ORT.pdf
 
-CONTEXTO: 
+MER RESULTANTE COMO APOYO EN LO QUE HAY QUE LOGRAR:
+
+![MER_Obligatorio2_ BD_ORT](https://github.com/user-attachments/assets/e433bfb8-b81c-4c1c-8737-86e35fc4311a)
+
+
+CONTEXTO LOGICA DE NEGOCIO: 
+
 La Radio X quiere realizar un sistema de blogs para que cada uno de sus programas escriba posts que puedan resultar de interés a los oyentes.
 De los Programas se conocen el nombre que es único, su descripción, la lista de sus conductores y un horario que se componen por la hora en la que inicia y la hora en la que termina. Los conductores de cada programa son los encargados en escribir los Post.
 De los Post se sabe su título que es único, el contenido, una imagen y un resumen del mismo para mostrar en los listados de los posts.
